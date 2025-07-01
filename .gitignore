@@ -22,7 +22,7 @@ Thumbs.db
 htmlcov/
 coverage.*
 
-models/*.h5
+
 models/*.pkl
 
 data/raw/
