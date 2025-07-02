@@ -32,7 +32,7 @@ if st.button("Run Prediction"):
     last_60_days = scaled_data[-60:]
     X_test = np.reshape(last_60_days, (1, 60, 1))
 
-    model = load_model('../models/lstm_model.h5')
+    model = load_model('./models/lstm_model.h5')
 
     pred_price = model.predict(X_test)
     pred_price = scaler.inverse_transform(pred_price)
